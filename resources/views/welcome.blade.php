@@ -45,7 +45,7 @@
     </div>
 
     <!-- Form Pembuatan Surat -->
-    <section id="formSuratSection" class="w-full max-w-xl bg-gray-800 rounded-lg p-6 shadow-lg space-y-6 mt-12 hidden">
+    <section id="formSuratSection" class="w-full max-w-xl bg-gray-800 rounded-lg p-6 shadow-lg sdrdtdfgdgsguziiisususgsiusy2tyyupace-y-6 mt-12 hidden">
       <h2 class="text-4xl font-bold mb-8 text-rose-400 text-center">Form Pembuatan Surat</h2>
       <form id="suratForm" class="space-y-6">
         <div>
