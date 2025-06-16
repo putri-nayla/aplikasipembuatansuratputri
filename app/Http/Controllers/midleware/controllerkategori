@@ -1,0 +1,20 @@
+<?php
+$mysqli = new mysqli("localhost", "username", "password", "database_name");
+
+$query = "SELECT s.id, s.judul, k.nama_kategori, s.tanggal, s.status
+          FROM surat s
+          JOIN kategori k ON s.kategori_id = k.id";
+
+$result = $mysqli->query($query);
+
+while ($row = $result->fetch_assoc()) {
+    echo "<tr>";
+    echo "<td>{$row['id']}</td>";
+    echo "<td>{$row['judul']}</td>";
+    echo "<td>{$row['nama_kategori']}</td>";
+    echo "<td>{$row['tanggal']}</td>";
+    echo "<td>{$row['status']}</td>";
+    echo "<td><a href='edit_surat.php?id={$row['id']}'>Edit</a> | <a href='hapus_surat.php?id={$row['id']}'>Hapus</a></td>";
+    echo "</tr>";
+}
+?>
